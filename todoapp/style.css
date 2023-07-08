@@ -1,22 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inp {
+    margin: 2rem 0 1.5rem 0;
+}
+
+#inp {
+    min-width: 30rem;
+    font-size: 18px;
+    letter-spacing: 0.4px;
+    padding: 4px 7px;
+}
+
 .box {
     display: flex;
     flex-direction: column-reverse;
+    gap: 1rem;
 }
 
-
-/* 
-.edit-icon {
-    display: block;
+.item {
+    position: relative;
 }
 
-.edit-sub {
-    display: none;
+button {
+    cursor: pointer;
 }
 
-.active {
-    display: block;
+.input-task {
+    min-width: 30rem;
+    font-size: 17px;
+    letter-spacing: 0.4px;
+    padding: 4px 32px;
+    outline: none;
 }
 
-.not-active {
-    display: none;
-} */
+.delete-btn {
+    position: absolute;
+    font-size: 17px;
+    padding: 4.9px 5px;
+    color: red;
+    background-color: #fff;
+    border: 1px solid;
+}
+
+.edit-btn {
+    position: absolute;
+    right: 0;
+    font-size: 17px;
+    padding: 4.9px 5px;
+    color: green;
+    background-color: #fff;
+    border: 1px solid;
+}

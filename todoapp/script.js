@@ -23,8 +23,9 @@ document.getElementById("sub").addEventListener("click", function submit() {
         editBtn.classList.add("edit-btn")
         editBtn.innerHTML = `<i class="fa-solid fa-pen-to-square"></i>`
 
-        resultDiv.appendChild(inputTask)
         resultDiv.appendChild(deleteBtn)
+
+        resultDiv.appendChild(inputTask)
         resultDiv.appendChild(editBtn)
 
         resultDiv.querySelector(".delete-btn").addEventListener("click", (e) => {
