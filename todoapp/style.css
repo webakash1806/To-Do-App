@@ -1,0 +1,22 @@
+.box {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+/* 
+.edit-icon {
+    display: block;
+}
+
+.edit-sub {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.not-active {
+    display: none;
+} */
