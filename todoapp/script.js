@@ -23,25 +23,38 @@ document.getElementById("sub").addEventListener("click", function submit() {
         editBtn.classList.add("edit-btn")
         editBtn.innerHTML = `<i class="fa-solid fa-pen-to-square"></i>`
 
-        resultDiv.appendChild(deleteBtn)
+        const completeBtn = document.createElement("button")
+        completeBtn.classList.add("complete-btn")
+        completeBtn.innerHTML = `<i class="fa-solid fa-check"></i>`
 
+        resultDiv.appendChild(deleteBtn)
         resultDiv.appendChild(inputTask)
         resultDiv.appendChild(editBtn)
+        resultDiv.appendChild(completeBtn)
 
         resultDiv.querySelector(".delete-btn").addEventListener("click", (e) => {
             resultDiv.remove()
         })
 
         resultDiv.querySelector(".edit-btn").addEventListener("click", (e) => {
-            if (editBtn.innerHTML === `<i class="fa-solid fa-pen-to-square"></i>`) {
+            if (inputTask.style.textDecoration === "line-through") {
+                alert("you can't edit after Compeletion")
+                inputTask.setAttribute("readonly", "readonly")
+            }
+
+            else if (editBtn.innerHTML === `<i class="fa-solid fa-pen-to-square"></i>`) {
                 editBtn.innerHTML = `<i class="fa-solid fa-circle-arrow-right"></i>`
                 inputTask.removeAttribute("readonly", "readonly")
             }
+
             else {
                 editBtn.innerHTML = `<i class="fa-solid fa-pen-to-square"></i>`
                 inputTask.setAttribute("readonly", "readonly")
-
             }
+        })
+
+        resultDiv.querySelector(".complete-btn").addEventListener("click", (e) => {
+            inputTask.style.textDecoration = "line-through"
         })
     }
 })

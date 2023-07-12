@@ -9,6 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .inp {
@@ -54,6 +55,16 @@ button {
 }
 
 .edit-btn {
+    position: absolute;
+    right: 26.5px;
+    font-size: 17px;
+    padding: 4.9px 5px;
+    color: green;
+    background-color: #fff;
+    border: 1px solid;
+}
+
+.complete-btn {
     position: absolute;
     right: 0;
     font-size: 17px;
