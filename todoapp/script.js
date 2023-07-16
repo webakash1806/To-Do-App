@@ -45,32 +45,27 @@ document.getElementById("sub").addEventListener("click", function submit() {
             else if (editBtn.innerHTML === `<i class="fa-solid fa-pen-to-square"></i>`) {
                 editBtn.innerHTML = `<i class="fa-solid fa-circle-arrow-right"></i>`
                 inputTask.removeAttribute("readonly", "readonly")
+                inputTask.style.border = "1px solid #b721f3"
+                inputTask.style.boxShadow = "1px 1px 10px  #b721f3"
             }
 
             else {
                 editBtn.innerHTML = `<i class="fa-solid fa-pen-to-square"></i>`
                 inputTask.setAttribute("readonly", "readonly")
+                inputTask.style.border = "1px solid #000"
+                inputTask.style.boxShadow = "1px 1px 10px #000"
             }
         })
 
         resultDiv.querySelector(".complete-btn").addEventListener("click", (e) => {
             inputTask.style.textDecoration = "line-through"
+            inputTask.style.boxShadow = "1px 1px 10px green"
         })
     }
 })
 
 
-// function updateLSData() {
-//     const textData = document.querySelectorAll('.input-task').value
-//     const notes = []
-//     textData.forEach((note) => {
-//         return notes.push(note.value)
-//     })
-//     console.log(notes)
-//     localStorage.setItem('notes', JSON.stringify(notes))
-// }
 
-// updateLSData()
 
 
 

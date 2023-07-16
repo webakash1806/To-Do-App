@@ -10,17 +10,53 @@ body {
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
+    background-image: linear-gradient(#0000008a, #0d0d0d3d, #0000000a), url(./Assets/pexels-cátia-matos-1072179.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #B721F3;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+
+header>p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 .inp {
-    margin: 2rem 0 1.5rem 0;
+    margin: 2rem 0 2rem 0;
+    position: relative;
 }
 
 #inp {
     min-width: 30rem;
     font-size: 18px;
     letter-spacing: 0.4px;
-    padding: 4px 7px;
+    padding: 9px 5rem 8px 7px;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+}
+
+#sub {
+    position: absolute;
+    right: 0;
+    font-size: 15px;
+    padding: 10px 5px;
+    font-weight: 500;
+    border: 1px solid black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #b721f3;
+    color: #fff;
 }
 
 .box {
@@ -41,14 +77,16 @@ button {
     min-width: 30rem;
     font-size: 17px;
     letter-spacing: 0.4px;
-    padding: 4px 32px;
+    padding: 7px 4rem 7px 32px;
     outline: none;
+    border: 1px solid black;
+    box-shadow: 1px 1px 10px #000;
 }
 
 .delete-btn {
     position: absolute;
     font-size: 17px;
-    padding: 4.9px 5px;
+    padding: 6.7px;
     color: red;
     background-color: #fff;
     border: 1px solid;
@@ -56,9 +94,9 @@ button {
 
 .edit-btn {
     position: absolute;
-    right: 26.5px;
+    right: 30px;
     font-size: 17px;
-    padding: 4.9px 5px;
+    padding: 6.7px;
     color: green;
     background-color: #fff;
     border: 1px solid;
@@ -68,8 +106,8 @@ button {
     position: absolute;
     right: 0;
     font-size: 17px;
-    padding: 4.9px 5px;
-    color: green;
-    background-color: #fff;
-    border: 1px solid;
+    padding: 6.7px;
+    background-color: green;
+    color: #fff;
+    border: 1px solid black;
 }
