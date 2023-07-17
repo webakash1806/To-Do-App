@@ -1,5 +1,7 @@
+
 document.getElementById("sub").addEventListener("click", function submit() {
     let inp = document.getElementById("inp").value
+
 
     if (inp === "") {
         alert("Enter Something")
@@ -62,6 +64,8 @@ document.getElementById("sub").addEventListener("click", function submit() {
             inputTask.style.boxShadow = "1px 1px 10px green"
         })
     }
+    document.getElementById("inp").value = ""
+
 })
 
 
